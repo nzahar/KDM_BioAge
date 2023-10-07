@@ -1,7 +1,7 @@
 """
 albumin - Albumin (g/dL)
 alp	- Alkaline phosphatase (U/L)
-lncrp - Log(c-reactive protein) (mg/dL)
+lncrp - Log(c-reactive protein) (mg/dL) !!
 totchol - Total cholesterol (mg/dL)
 lncreat - Log(creatinine) (mg/dL)
 hba1c - Glycohemoglobin (%)
@@ -19,8 +19,8 @@ import pandas as pd
 class BioAge:
     # biomarkers = ["albumin","alp","lncrp","totchol","lncreat","hba1c","sbp","bun","uap","lymph","mcv","wbc"]
     def __init__(self):
-        self.fem_s_ba2 = 1459.9966384387
-        self.male_s_ba2 = 2079.82462095304
+        self.fem_s_ba2 = 1462.073
+        self.male_s_ba2 = 2106.478
         self.fem_weights = pd.read_csv('fem_fit_table.csv')
         self.male_weights = pd.read_csv('male_fit_table.csv')
 
